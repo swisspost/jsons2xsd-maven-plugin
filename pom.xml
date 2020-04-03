@@ -46,4 +46,11 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Swisspush Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/swisspush/jsons2xsd-maven-plugin</url>
+    </repository>
+  </distributionManagement>
 </project>
