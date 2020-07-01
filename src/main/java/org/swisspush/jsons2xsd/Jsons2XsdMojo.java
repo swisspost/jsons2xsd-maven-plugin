@@ -91,6 +91,7 @@ public class Jsons2XsdMojo extends AbstractMojo
                 .rootElement(name.substring(0,1).toLowerCase()+name.substring(1))
                 .customTypeMapping(JsonSimpleType.INTEGER, "long", XsdSimpleType.LONG)
                 .customTypeMapping(JsonSimpleType.INTEGER, "int64", XsdSimpleType.LONG)
+                .customTypeMapping(JsonSimpleType.STRING, "uuid", XsdSimpleType.STRING)
                 .validateXsdSchema(false);
 
         if(useGenericItemNames) {
