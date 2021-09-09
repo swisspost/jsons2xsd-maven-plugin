@@ -31,6 +31,15 @@
 
   <servers>
     <server>
+      <id>sonatype-nexus-staging</id>
+      <username>${env.CI_DEPLOY_USERNAME}</username>
+      <password>${env.CI_DEPLOY_PASSWORD}</password>
+    </server>
+    <server>
+      <id>gpg.passphrase</id>
+      <passphrase>${env.CI_PGP_PASSWORD}</passphrase>
+    </server>
+    <server>
       <id>github</id>
       <username>${env.GITHUB_USERNAME}</username>
       <password>${env.GITHUB_TOKEN}</password>
