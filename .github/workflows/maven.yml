@@ -2,6 +2,9 @@ name: Java CI
 
 on: [push]
 
+permissions:
+  packages: write
+
 jobs:
   build:
 
