@@ -3,7 +3,7 @@
     <groupId>org.swisspush.maven.plugins</groupId>
     <artifactId>jsons2xsd-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.3</version>
     <name>jsons2xsd Maven Mojo</name>
     <description>jsons2xsd Maven Mojo</description>
     <url>https://github.com/swisspush/jsons2xsd-maven-plugin</url>
