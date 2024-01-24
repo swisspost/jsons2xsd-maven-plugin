@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.swisspush.maven.plugins</groupId>
     <artifactId>jsons2xsd-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
     <name>jsons2xsd Maven Mojo</name>
     <description>jsons2xsd Maven Mojo</description>
     <url>https://github.com/swisspush/jsons2xsd-maven-plugin</url>
@@ -83,6 +82,10 @@
                                 <homedir>${session.executionRootDirectory}</homedir>
                                 <keyname>230584D7</keyname>
                                 <!--<executable>C:\Program Files (x86)\GnuPG\bin\gpg.exe</executable>-->
+                                <gpgArguments>
+                                    <arg>--pinentry-mode</arg>
+                                    <arg>loopback</arg>
+                                </gpgArguments>
                             </configuration>
                         </execution>
                     </executions>
@@ -230,6 +233,10 @@
                                     <homedir>${session.executionRootDirectory}</homedir>
                                     <keyname>230584D7</keyname>
                                     <!--<executable>C:\Program Files (x86)\GnuPG\bin\gpg.exe</executable>-->
+                                    <gpgArguments>
+                                        <arg>--pinentry-mode</arg>
+                                        <arg>loopback</arg>
+                                    </gpgArguments>
                                 </configuration>
                             </execution>
                         </executions>
