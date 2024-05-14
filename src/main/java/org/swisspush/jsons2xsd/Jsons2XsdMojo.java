@@ -92,6 +92,9 @@ public class Jsons2XsdMojo extends AbstractMojo
                 .customTypeMapping(JsonSimpleType.INTEGER, "long", XsdSimpleType.LONG)
                 .customTypeMapping(JsonSimpleType.INTEGER, "int64", XsdSimpleType.LONG)
                 .customTypeMapping(JsonSimpleType.STRING, "uuid", XsdSimpleType.STRING)
+                .customTypeMapping(JsonSimpleType.NUMBER, "double", XsdSimpleType.DECIMAL)
+                .customTypeMapping(JsonSimpleType.NUMBER, "float", XsdSimpleType.DECIMAL)
+                .ignoreUnknownFormats(true)
                 .validateXsdSchema(false);
 
         if(useGenericItemNames) {
